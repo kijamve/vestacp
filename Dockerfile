@@ -1,5 +1,5 @@
 FROM niiknow/docker-hostingbase:1.4.2
-LABEL maintainer="noogen <friends@niiknow.org>"
+LABEL maintainer="Kijam <info@kijam.com>"
 ENV DEBIAN_FRONTEND=noninteractive \
     VESTA=/usr/local/vesta \
     GOLANG_VERSION=1.12.5 \

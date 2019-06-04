@@ -2,10 +2,10 @@ version: "3"
 
 services:
   vesta:
-    image: niiknow/vestacp
+    image: kijamve/vestacp
     container_name: vesta
     cap_add: ['NET_RAW', 'NET_ADMIN']
-    hostname: yourcpanelhostname.com
+    hostname: ds.cuado.co
     volumes:
       - "/opt/vestacp/backup:/backup"
       - "/opt/vestacp/vesta:/vesta"
@@ -14,7 +14,7 @@ services:
       - "3322:22"
       - "80:80"
       - "443:443"
-      - "9088:8083"
+      - "8083:8083"
     ulimits:
       nproc: 65535
       nofile:

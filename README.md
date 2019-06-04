@@ -16,9 +16,9 @@ Run this image:
 mkdir -p /opt/vestacp/{vesta,home,backup}
 
 docker run -d --restart=always \
--p 3322:22 -p 80:80 -p 443:443 -p 9088:8083 \
+-p 3322:22 -p 80:80 -p 443:443 -p 9088:8083 -p 8083:8083 \
 -v /opt/vestacp/vesta:/vesta -v /opt/vestacp/home:/home -v /opt/vestacp/backup:/backup \
-niiknow/vestacp
+kijamve/vestacp
 ```
 
 ## Volumes

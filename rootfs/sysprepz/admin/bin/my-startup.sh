@@ -14,12 +14,17 @@ rm -f /var/run/vesta*.pid
 rm -f /var/run/nginx.pid
 
 # delete defult postgres admindb if not use, then comment out the line below
-./postgresql start
+# ./postgresql start
 ./vesta start
 
 ./php7.2-fpm start
 ./php7.3-fpm start
 ./nginx start
+./spamassassin start
+./clamav-daemon start
+./exim4 start
+./dovecot start
+./fail2ban start 
 
 # ./fail2ban start \ # -- only if you run with: --cap-add=NET_ADMIN --cap-add=NET_RAW
 # other services (exim4, dovecot, clamav-daemon, spamassassin, couchdb, mongodb)

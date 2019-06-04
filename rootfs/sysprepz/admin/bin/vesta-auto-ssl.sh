@@ -4,7 +4,7 @@
 source /etc/container_environment.sh
 
 VESTA_PATH='/usr/local/vesta'
-domain=`/bin/hostname --fqdn`
+domain='ds.cuado.co'
 user='admin'
 
 # only run if hostname is valid, regex check if it has a period
