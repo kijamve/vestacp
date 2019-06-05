@@ -52,7 +52,7 @@ if [[ $domain == *[\.]* ]]; then
     if [ ! -d "/home/$user/web/$domain/" ]; then
         echo "[i] Creating website '$domain' for '$user'"
 
-        $VESTA_PATH/bin/v-add-web-domain "$user" "$domain" '127.0.0.1' 'no' 'none' ''
+        $VESTA_PATH/bin/v-add-web-domain "$user" "$domain" '198.54.124.178' 'no' 'none' ''
     fi
 
     # if no letsencrypt cert, create one

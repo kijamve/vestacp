@@ -1,11 +1,10 @@
-version: "3"
-
+version: "1"
 services:
   vesta:
     image: kijamve/vestacp
-    container_name: vesta
+    container_name: vestacp
     cap_add: ['NET_RAW', 'NET_ADMIN']
-    hostname: ds.cuado.co
+    hostname: ds1.cuado.co
     volumes:
       - "/opt/vestacp/backup:/backup"
       - "/opt/vestacp/vesta:/vesta"
@@ -25,11 +24,3 @@ services:
     labels:
       - "Vesta Control Panel"
     restart: always
-
-# Note, set hostname for auto ssl on the panel, it also
-# help with valid IP for SMTP email validation among
-# other things.
-# 
-# also note, I set the port to 9088 above on purpose
-# You can of course change it back to 8083
-# it help with security to change to a different port

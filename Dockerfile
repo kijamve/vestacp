@@ -101,7 +101,7 @@ RUN cd /tmp \
 # begin install vesta
     && bash /tmp/vst-install-ubuntu.sh \
         --nginx yes --apache yes --phpfpm no \
-        --vsftpd no --proftpd no \
+        --vsftpd yes --proftpd no \
         --named yes --exim yes --dovecot yes \
         --spamassassin yes --clamav yes \
         --iptables yes --fail2ban yes \
